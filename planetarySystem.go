@@ -23,23 +23,6 @@ type PlanetDesc struct {
 
 func main() {
 
-	//Opening the planets json file
-	jsonFile, err := os.Open("planets.json")
-
-	//Checking if no errors occur, if any do print error
-	if err != nil {
-		fmt.Println(err)
-	}
-
-	//Defer closing of the json file so it can be parsed
-	defer jsonFile.Close()
-
-	byteValue, _ := ioutil.ReadAll(jsonFile)
-
-	var planets Planets
-
-	json.Unmarshal(byteValue, &planets)
-
 	//Initial stdout to user with name request
 	personName := bufio.NewReader(os.Stdin)
 	fmt.Printf("Welcome to the Solar System!\n")
@@ -89,6 +72,7 @@ func planetChoice(planets Planets, userResponse string, randomizePlanet bool) {
 
 	//Opening the planets json file
 	jsonFile, err := os.Open("planets.json")
+
 	//Checking if no errors occur, if any do print error
 	if err != nil {
 		fmt.Println(err)
