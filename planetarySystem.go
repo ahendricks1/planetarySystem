@@ -67,6 +67,7 @@ func travel() {
 
 		//If N, boolean remains false
 	} else if response == "N" {
+		fmt.Println("What planet would you like to learn about?")
 		planetChoice(planets, response, false)
 
 		//Else repeat question
@@ -106,7 +107,6 @@ func planetChoice(planets Planets, userResponse string, randomizePlanet bool) {
 
 		//Else if they want a specific planet, have them type in the name
 	} else {
-		fmt.Println("What planet would you like to learn about?")
 		fmt.Scanln(&specificPlanet)
 
 		//Iterate through planets to find specific planet chosen
@@ -121,9 +121,9 @@ func planetChoice(planets Planets, userResponse string, randomizePlanet bool) {
 		if planetFound {
 			fmt.Println(planets.Planets[index].Name + ": " + planets.Planets[index].Description)
 
-		//Else repeat question
+			//Else repeat question
 		} else {
-			fmt.Println("What was that?")
+			fmt.Println("That's not a planet...try again...")
 			planetChoice(planets, specificPlanet, false)
 		}
 
