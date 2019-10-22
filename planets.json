@@ -1,0 +1,40 @@
+{
+    "planets":[
+        {
+        "name": "Mercury",
+        "description": "The smallest planet in our solar system and nearest to the sun!"
+    },
+        {
+        "name": "Venus",
+        "description": "Second planet from the sun!"
+    },
+    {
+        "name": "Earth",
+        "description": "Third in line, contains lifeforms bent on destroying the planet."
+    },
+    {
+        "name": "Mars",
+        "description": "Fourth planet and also the god of war."
+    },
+    {
+        "name": "Jupiter",
+        "description": "Fifth from the sun, and twice as large as all of the other planets combined!"
+    },
+    {
+        "name": "Saturn",
+        "description": "Sixth planet and surrounded by some sweet rings."
+    },
+    {
+        "name": "Uranus",
+        "description": "There is absolutely nothing funny about this planets name."
+    },
+    {
+        "name": "Neptune",
+        "description": "Water planet."
+    },
+    {
+        "name": "Pluto",
+        "description": "It is a planet because I say so DAMMIT."
+    }
+    ]
+}
