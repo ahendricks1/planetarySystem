@@ -110,6 +110,5 @@ func planetChoice(planets Planets, userResponse string, randomizePlanet bool) {
 			fmt.Println("That's not a planet...try again...")
 			planetChoice(planets, specificPlanet, false)
 		}
-
 	}
 }
